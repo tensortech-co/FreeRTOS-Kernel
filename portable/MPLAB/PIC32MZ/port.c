@@ -40,7 +40,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
-#if !defined(__PIC32MZ__)
+#if !defined(__PIC32MK__)
     #error This port is designed to work with XC32 on PIC32MZ MCUs.  Please update your C compiler version or settings.
 #endif
 
