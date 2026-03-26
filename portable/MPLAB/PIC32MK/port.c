@@ -1,5 +1,5 @@
 /*
- * FreeRTOS Kernel V11.2.0
+ * FreeRTOS Kernel V11.1.0
  * Copyright (C) 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
  * SPDX-License-Identifier: MIT
@@ -39,10 +39,6 @@
 /* Scheduler include files. */
 #include "FreeRTOS.h"
 #include "task.h"
-
-#if !defined(__PIC32MZ__)
-    #error This port is designed to work with XC32 on PIC32MZ MCUs.  Please update your C compiler version or settings.
-#endif
 
 #if( ( configMAX_SYSCALL_INTERRUPT_PRIORITY >= 0x7 ) || ( configMAX_SYSCALL_INTERRUPT_PRIORITY == 0 ) )
     #error configMAX_SYSCALL_INTERRUPT_PRIORITY must be less than 7 and greater than 0
