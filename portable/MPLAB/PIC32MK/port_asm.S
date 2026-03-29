@@ -80,21 +80,21 @@
             .global  __vector_dispatch_24
             .section .vector_24, code, keep
         #elif (configTICK_INTERRUPT_VECTOR == _TIMER_6_VECTOR)
-            .equ     __vector_dispatch_28, vPortTickInterruptHandler
-            .global  __vector_dispatch_28
-            .section .vector_28, code, keep
+            .equ     __vector_dispatch_76, vPortTickInterruptHandler
+            .global  __vector_dispatch_76
+            .section .vector_76, code, keep
         #elif (configTICK_INTERRUPT_VECTOR == _TIMER_7_VECTOR)
-            .equ     __vector_dispatch_32, vPortTickInterruptHandler
-            .global  __vector_dispatch_32
-            .section .vector_32, code, keep
+            .equ     __vector_dispatch_80, vPortTickInterruptHandler
+            .global  __vector_dispatch_80
+            .section .vector_80, code, keep
         #elif (configTICK_INTERRUPT_VECTOR == _TIMER_8_VECTOR)
-            .equ     __vector_dispatch_36, vPortTickInterruptHandler
-            .global  __vector_dispatch_36
-            .section .vector_36, code, keep
+            .equ     __vector_dispatch_84, vPortTickInterruptHandler
+            .global  __vector_dispatch_84
+            .section .vector_84, code, keep
         #elif (configTICK_INTERRUPT_VECTOR == _TIMER_9_VECTOR)
-            .equ     __vector_dispatch_40, vPortTickInterruptHandler
-            .global  __vector_dispatch_40
-            .section .vector_40, code, keep
+            .equ     __vector_dispatch_88, vPortTickInterruptHandler
+            .global  __vector_dispatch_88
+            .section .vector_88, code, keep
         #endif
     #else
         .equ     __vector_dispatch_4, vPortTickInterruptHandler
